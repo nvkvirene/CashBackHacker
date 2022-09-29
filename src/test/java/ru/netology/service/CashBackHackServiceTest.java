@@ -1,14 +1,12 @@
 package ru.netology.service;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
-import java.util.concurrent.Callable;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class CashBackHackServiceTest {
 
     @Test
-    void shouldBuyFor1000() {
+    public void shouldBuyFor1000() {
         CashBackHackService service = new CashBackHackService();
         int amount = 900;
 
@@ -20,7 +18,7 @@ public class CashBackHackServiceTest {
     }
 
     @Test
-    void shouldBuyFor1900() {
+    public void shouldBuyFor1900() {
         CashBackHackService service = new CashBackHackService();
         int amount = 1_500;
 
@@ -31,7 +29,7 @@ public class CashBackHackServiceTest {
     }
 
     @Test
-    void shouldButFor0() {
+    public void shouldButFor0() {
     CashBackHackService service = new CashBackHackService();
     int amount = 1_000;
 
